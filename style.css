@@ -1,0 +1,146 @@
+:root{
+  --sage-green:#A2E4B8;
+  --purple:#967A94;
+}
+body{
+  margin:0;
+}
+#navbar{
+  background-color: var(--sage-green);
+  height: 60px;
+  width:100%;
+  text-align:right;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:2;
+}
+#navbar a{
+  font-size:1.5rem;
+  text-decoration:none;
+  color:black;
+  display:inline-block;
+  margin:1rem;
+  
+}
+@media (max-width: 900px){
+ #navbar{
+   text-align:center;
+  }
+}
+#welcome-section{
+  
+  width:100%;
+  height:100vh;
+  margin:0;
+  background-color:var(--purple);
+  text-align:center;
+  
+}
+#projects{
+  text-align:center;
+  font-size:2rem;
+  height:30rem;
+  padding-top:2rem;
+}
+h1{
+  padding-top:45vh;
+}
+#projects h2{
+  
+  margin-bottom:1rem;
+}
+#projects a{
+  text-decoration:none;
+  color:black;
+}
+.project-tile{
+  float:left;
+  border:solid;
+  width:20%;
+  height:250px;
+  margin:25px;
+  text-align:center; 
+  font-size:1.5rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  overflow:hidden;
+}
+@media(max-width:900px){
+  #projects{
+    height:80rem;
+  }
+  .project-tile{
+    float:none;
+    
+    width:80%;
+    margin: 1rem auto;
+  }
+  
+}
+.box1:hover, .box2:hover, .box3:hover, .box4:hover{
+  
+  transform: scale(1.2);
+  
+}
+#projects h3{
+  margin:0;
+  z-index:1;
+  height:5rem;
+  border-top:solid;
+  background: var(--sage-green);
+}
+.box1{
+  height:200px;
+  
+  background: url(https://progameguides.com/wp-content/uploads/2021/10/Featured-Fully-Kitted-Weapon-Rotation-Apex-Legends-Season-11.jpg);
+  background-size:cover;
+  background-position:center;
+}
+.box2{
+  height:200px;
+  background-image: url("https://i.imgur.com/CelcROr.png");
+  background-position:center;
+  background-size:cover;
+}
+.center{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.box3{
+  height:200px;
+  background: url(https://i.imgur.com/8lb9QLk.png);
+  background-size:cover;
+  background-position:center;
+}
+.box4{
+  height:200px;
+  background: url(https://i.imgur.com/3uCfuAp.png);
+  background-size:cover;
+  background-position:center;
+}
+
+#profile{
+  clear:both;
+  text-align:center;
+  font-size:2rem; 
+  background: var(--purple);
+  diplay:flex;
+  justify-content:center;
+  align-items:center;
+  height:15rem;
+  margin:0;
+  padding:3rem;
+  
+}
+#profile h3{
+  
+}
+#profile a{
+  font-size:1.5rem;
+  text-decoration:none;
+  color:black;
+  margin:2rem;
+}
